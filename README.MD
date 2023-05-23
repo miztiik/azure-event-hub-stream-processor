@@ -64,7 +64,7 @@ By leveraging the capabilities of Bicep, all the required resources can be easil
    - `jq` - [Get help here](https://stedolan.github.io/jq/download/)
    - `bash` or git bash - [Get help here](https://git-scm.com/downloads)
 
-2. ## ⚙️ Setting up the environment
+1. ## ⚙️ Setting up the environment
 
    - Get the application code
 
@@ -73,7 +73,7 @@ By leveraging the capabilities of Bicep, all the required resources can be easil
      cd azure-event-hub-stream-processor
      ```
 
-3. ## 🚀 Prepare the local environment
+1. ## 🚀 Prepare the local environment
 
    Ensure you have jq, Azure Cli and bicep working
 
@@ -85,7 +85,7 @@ By leveraging the capabilities of Bicep, all the required resources can be easil
    az account show
    ```
 
-4. ## 🚀 Deploying the Solution
+1. ## 🚀 Deploying the Solution
 
    - **Stack: Main Bicep**
      We will create the following resources
@@ -116,7 +116,7 @@ By leveraging the capabilities of Bicep, all the required resources can be easil
 
       ![Miztiik Automation - Event Streaming with Azure Event Hub](images/miztiik_architecture_event_stream_processing_with_azure_event_hub_functions_cosmos_002.png)
 
-5. ## 🔬 Testing the solution
+1. ## 🔬 Testing the solution
 
    - **Trigger the function**
 
@@ -152,11 +152,15 @@ By leveraging the capabilities of Bicep, all the required resources can be easil
       ![Miztiik Automation - Event Streaming with Azure Event Hub](images/miztiik_architecture_event_stream_processing_with_azure_event_hub_functions_cosmos_004.png)
       ![Miztiik Automation - Event Streaming with Azure Event Hub](images/miztiik_architecture_event_stream_processing_with_azure_event_hub_functions_cosmos_005.png)
 
-6. ## 📒 Conclusion
+      You can also use the [Service Bus Hub Explorer Tool][4] to view the events in the event hub.
+
+      ![Miztiik Automation - Event Streaming with Azure Event Hub](images/miztiik_architecture_event_stream_processing_azure_event_hub_functions_cosmos_006.png)
+
+1. ## 📒 Conclusion
 
    In this demonstration, we showcase a streamlined process for event streaming ingestion with Azure Event Hub and stream processing with Azure Functions. This allows for optimized event processing and enables targeted handling of events based on specific criteria, facilitating seamless downstream processing with the use of _consumer groups_ or _partition_id_ filters or _event properties_.
   
-7. ## 🧹 CleanUp
+1. ## 🧹 CleanUp
 
    If you want to destroy all the resources created by the stack, Execute the below command to delete the stack, or _you can delete the stack from console as well_
 
